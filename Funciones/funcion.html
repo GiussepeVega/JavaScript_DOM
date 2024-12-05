@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcion</title>
+</head>
+<style>
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 25%;
+        border: 1px solid black;
+        height: 200px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <h1>El Calculador</h1>
+    <form method="post">
+    <label>Ingrese un numero: </label>
+    <input type="number" placeholder="Ingrese un nro" id="nro1">
+    <label>Ingrese otro numero: </label>
+    <input type="number" placeholder="Ingrese un nro" id="nro2">
+    <label>Seleccione un operador:</label>
+    <select id="operador"> 
+        <option value="+">Sumar</option>
+        <option value="-">Restar</option>
+        <option value="/">División</option>
+        <option value="*">Multiplicación</option>
+    </select>
+    <button type="button" onclick="calculador()">Calcular</button>
+    </form>
+    <strong><p id="result">Tu resultado es: </p></strong>
+    <script src="funcion.js"></script>
+</body>
+</html>
